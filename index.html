@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Erik</title>
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+
+<body>
+    <div id="loading-screen">
+        <div class="hourglass">
+            <div class="sand-top"></div>
+            <div class="sand"></div>
+        </div>
+    </div>
+
+    <div id="main-content" class="container" style="display: none;">
+        <header>
+            <h1>Bem-vindo ao Meu Portfólio!</h1>
+            <p class="sketch-underline">Aqui você encontra os meus melhores trabalhos e projetos.</p>
+        </header>
+
+        <!-- Botões com ícones SVG -->
+        <div class="buttons">
+            <a href="seu-curriculo.pdf" class="icon-btn" download title="Currículo">
+                <img src="icons/resume-icon.svg" alt="Currículo" />
+            </a>
+            <a href="https://www.linkedin.com/in/seu-usuario" class="icon-btn" target="_blank" title="LinkedIn">
+                <img src="icons/linkedin-icon.svg" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/seu-usuario" class="icon-btn" target="_blank" title="GitHub">
+                <img src="icons/github-icon.svg" alt="GitHub" />
+            </a>
+        </div>
+
+        <section>
+            <h2>Meus Projetos</h2>
+            <div class="carousel">
+                <button class="carousel-btn" id="prev-btn">&#x2039;</button>
+                <div class="carousel-images">
+                    <img src="projeto1.png" alt="Projeto 1" class="carousel-item visible">
+                    <img src="projeto2.png" alt="Projeto 2" class="carousel-item">
+                    <img src="projeto3.png" alt="Projeto 3" class="carousel-item">
+                    <img src="projeto4.png" alt="Projeto 4" class="carousel-item">
+                </div>
+                <button class="carousel-btn" id="next-btn">&#x203A;</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>Obrigado pela visita! Entre em contato para saber mais sobre meu trabalho.</p>
+        </footer>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
