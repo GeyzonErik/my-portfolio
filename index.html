@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Erik</title>
-    <link rel="stylesheet" href="/styles/index.css">
+    <title>Erikles Costa - Portfólio</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,26 +18,41 @@
     </div>
 
     <div id="main-content" class="container" style="display: none;">
+        <!-- Foto e Nome -->
         <header>
-            <h1>Bem-vindo ao Meu Portfólio!</h1>
-            <p class="sketch-underline">Aqui você encontra os meus melhores trabalhos e projetos.</p>
+            <div class="photo-container">
+                <img src="/assets/imgs/thumb-1920-255988.jpg" alt="Foto de Erikles Costa" class="profile-photo">
+            </div>
+            <div>
+                <h1>Erikles Costa</h1>
+                <p class="subtitle">Portfólio / Portfolio</p>
+            </div>
         </header>
 
-        <!-- Botões com ícones SVG -->
-        <div class="buttons">
-            <a href="seu-curriculo.pdf" class="icon-btn" download title="Currículo">
-                <img src="icons/resume-icon.svg" alt="Currículo" />
-            </a>
-            <a href="https://www.linkedin.com/in/seu-usuario" class="icon-btn" target="_blank" title="LinkedIn">
-                <img src="icons/linkedin-icon.svg" alt="LinkedIn" />
-            </a>
-            <a href="https://github.com/seu-usuario" class="icon-btn" target="_blank" title="GitHub">
-                <img src="icons/github-icon.svg" alt="GitHub" />
-            </a>
-        </div>
+        <!-- Seção Sobre -->
+        <section id="sobre">
+            <h2>Sobre / About</h2>
+            <p>Sou Erikles Costa, um entusiasta de tecnologia e inovação, com experiência em desenvolvimento de software
+                e um amor pela criação de soluções impactantes. Navegue pelo meu portfólio e veja os projetos que
+                desenvolvi ao longo da minha carreira.</p>
 
-        <section>
-            <h2>Meus Projetos</h2>
+            <!-- Links Sociais -->
+            <div class="social-links">
+                <a href="assets/pdf/Erikles-Costa-Resume-EN.pdf" class="icon-btn" download title="Currículo">
+                    <img src="assets/svg/resume-icon.svg" alt="Currículo" />
+                </a>
+                <a href="https://www.linkedin.com/in/seu-usuario" class="icon-btn" target="_blank" title="LinkedIn">
+                    <img src="assets/svg/linkedin-icon.svg" alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/seu-usuario" class="icon-btn" target="_blank" title="GitHub">
+                    <img src="assets/svg/github-icon.svg" alt="GitHub" />
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção de Projetos -->
+        <section id="section-projects">
+            <h2>Meus Projetos / My Projects</h2>
             <div class="carousel">
                 <button class="carousel-btn" id="prev-btn">&#x2039;</button>
                 <div class="carousel-images">
@@ -48,13 +64,9 @@
                 <button class="carousel-btn" id="next-btn">&#x203A;</button>
             </div>
         </section>
-
-        <footer>
-            <p>Obrigado pela visita! Entre em contato para saber mais sobre meu trabalho.</p>
-        </footer>
     </div>
 
-    <script src="./scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
